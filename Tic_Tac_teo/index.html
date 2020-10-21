@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="p5.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <script src="TicTacTeo_AI.js"></script>
+  <script src="sketch.js"></script>
+
+</head>
+
+<body>
+  <div class="text">
+    <h2 class="textC">Game statue: <p class="childT" id="gameStatText">NaN</p>
+    </h2>
+
+    <div class="textContain">Step: <p class="childT" id="stepText">NaN</p>
+    </div>
+
+    <div class="textContain">Player1:
+      <p class="childT" id="p1Display">NaN</p>
+    </div>
+    <div class="textContain">
+      Player2:
+      <p class="childT" id="p2Display">NaN</p>
+    </div>
+  </div>
+
+  <br>
+  <div id="game">
+  </div>
+
+  <label class="container" id="AIPlayContainer">Play With AI
+  <input type="checkbox" id="AICheckBox" onclick="choosePlayAI()">
+  <span class="checkmark"></span>
+  </label>
+
+  <label class="container" id="AIOrderContainer" style="display: none;">AI Go First
+  <input type="checkbox" id="AIOrderCheckBox" onclick="aIMoveOrder()">
+  <span class="checkmark"></span>
+  </label>
+
+  <br>
+
+  <input class="button" id="replayButton" type="button" value="Re Match!" onclick="initialize()">
+
+</body>
+
+</html>
